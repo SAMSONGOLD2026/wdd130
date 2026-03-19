@@ -1,51 +1,86 @@
+:root {
+    /* Colors */
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --text-color: #333;
+    --aside-bg-color: #eee;
+
+    /* Layout & spacing */
+    --main-max-width: 840px;
+    --standard-padding: 10px;
+    --large-padding: 20px;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+
+    /* Borders & shadows */
+    --border-standard: 1px solid black;
+    --border-light: 1px solid rgb(0 0 0 / 0.2);
+    --footer-border: 1px solid #000;
+    --image-shadow: 0 0 30px gray;
+
+    /* Image sizes */
+    --main-image-width: 150px;
+    --aside-image-width: 200px;
+
+    /* Misc */
+    --image-padding: 2px;
+    --footer-margin-top: 15px;
+}
+
+/* Navigation */
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--standard-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: var(--large-padding);
 }
 
+/* Heading */
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
+/* Main content */
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 main img {
-    width: 150px;
+    width: var(--main-image-width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border-standard);
+    padding: var(--image-padding);
+    box-shadow: var(--image-shadow);
 }
 
+/* Paragraphs */
 p {
     padding: 0;
 }
 
+/* Aside section */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
+    border: var(--border-light);
+    padding: var(--aside-margin);
+    background-color: var(--aside-bg-color);
+    color: var(--text-color);
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-image-width);
     height: auto;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: var(--footer-border);
     text-align: center;
 }
