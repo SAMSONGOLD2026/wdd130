@@ -27,6 +27,17 @@
     --footer-margin-top: 15px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 /* Navigation */
 nav {
     background-color: var(--primary-color);
@@ -42,6 +53,7 @@ nav a {
 /* Heading */
 h1 {
     color: var(--primary-color);
+    padding: .5rem;
 }
 
 /* Main content */
@@ -55,11 +67,13 @@ main img {
     border: var(--border-standard);
     padding: var(--image-padding);
     box-shadow: var(--image-shadow);
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 /* Paragraphs */
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 /* Aside section */
@@ -71,6 +85,7 @@ aside {
     background-color: var(--aside-bg-color);
     color: var(--text-color);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -78,9 +93,29 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 33px;
+    left: 120px;
+
+}
+
 /* Footer */
 footer {
     margin-top: var(--footer-margin-top);
     border-top: var(--footer-border);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
