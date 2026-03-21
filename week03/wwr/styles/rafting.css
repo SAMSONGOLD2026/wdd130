@@ -31,37 +31,12 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* NAVIGATION */
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-/* HEADINGS */
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-/* SPACING */
 nav,
 p,
 section,
@@ -70,59 +45,47 @@ article {
     padding: 8px;
 }
 
-/* HERO SECTION */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ===============================
+   Hero Section
+================================ */
 .hero {
     position: relative;
 }
 
-/* HERO IMAGE */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* HERO TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
-/* HERO ARTICLE */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    border-radius: 8px;
 }
 
-/* ARTICLE IMAGE */
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 10px;
+    margin-left: 12px;
+    border-radius: 8px;
 }
-
-/* FOOTER */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* SOCIAL MEDIA */
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 30px;
-}
-
-```
