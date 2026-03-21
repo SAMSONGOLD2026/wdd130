@@ -1,0 +1,129 @@
+```css
+
+/* CSS VARIABLES */
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent1-color: #bee9e8;
+    --accent2-color: #5fa8d3;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+/* PAGE WIDTH */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+/* SPACING */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+}
+
+/* HERO IMAGE */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* HERO TITLE */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+/* HERO ARTICLE */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* ARTICLE IMAGE */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+```
