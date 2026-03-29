@@ -8,14 +8,6 @@
     --body-font: Verdana, sans-serif;
 }
 
-header {
-    background-color: var(--secondary-color);
-}
-
-footer {
-    background-color: var(--accent2-color);
-}
-
 /* RESET */
 * {
     margin: 0;
@@ -33,52 +25,54 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
-h1 {
-    color: red;
+/* ================= HEADER (GRID) ================= */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
 }
 
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+header img {
+    width: 100%;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+/* NAV (FLEX) */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
-.socialmedia a {
+.nav-links a {
     text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
-/* ===============================
-   Hero Section
-================================ */
+/* ================= HERO ================= */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: white;
+    padding: 10px;
 }
 
 .hero article {
@@ -87,13 +81,71 @@ article {
     left: 20px;
     max-width: 60%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 12px;
-    border-radius: 8px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+/* ================= HISTORY (GRID) ================= */
+.history {
+    margin: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+/* ================= ADVENTURES (FLEX) ================= */
+.adventures {
+    margin: 20px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+    flex: 1;
+}
+
+figcaption {
+    margin-top: 5px;
+}
+
+/* ================= FOOTER (FLEX) ================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
 }
