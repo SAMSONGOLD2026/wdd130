@@ -21,6 +21,12 @@ body {
     color: var(--primary-color);
 }
 
+/* ✅ FIX: Use heading font (resolves unused variable error) */
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
 /* PAGE WIDTH */
 header,
 main,
@@ -148,4 +154,9 @@ footer {
 
 .socialmedia img {
     width: 30px;
+}
+
+/* ✅ FIX: Remove underline from social media links */
+.socialmedia a {
+    text-decoration: none;
 }
