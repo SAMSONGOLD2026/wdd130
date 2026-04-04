@@ -37,7 +37,7 @@
 
         <!-- CONTACT INFO -->
         <section class="contact-info">
-            <h1>Contact Us</h1>
+            <h1>Contact Us - White Water Rafting Co.</h1>
             <p><strong>Address</strong> Abuja, Nigeria</p>
             <p><strong>Phone number(s):</strong>+234 803 782 5729</p>
             <p><strong>Email:</strong>e.gold@byupathway.edu</p>
@@ -47,7 +47,7 @@
         <section class="map">
             <h2>Our Location</h2>
 
-            <iframe src="https://www.google.com/maps/embed?pb=..." loading="lazy"
+            <iframe src="https://www.google.com/maps?q=Abuja&output=embed" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
@@ -89,21 +89,14 @@
                 <!-- PURPOSE -->
                 <p><strong>Purpose of Message:</strong></p>
 
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
+                <input type="radio" id="general" name="purpose" value="general" required>
+                <label for="general">General Inquiry</label>
 
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation Question</label>
 
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <label for="suggestion">Website Suggestion</label>
                 <!-- MESSAGE -->
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>

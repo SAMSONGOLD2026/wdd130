@@ -42,6 +42,8 @@ header {
     align-items: center;
     background-color: var(--secondary-color);
     padding: 10px;
+    color: white;
+    /*FIXED contrast */
 }
 
 header img {
@@ -57,7 +59,7 @@ header img {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: white;
     font-weight: bold;
 }
 
@@ -139,23 +141,6 @@ figcaption {
 }
 
 /* ================= FOOTER (FLEX) ================= */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--accent2-color);
-    padding: 15px;
-    text-align: center;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia img {
-    width: 30px;
-}
 
 /* ✅ FIX: Remove underline from social media links */
 .socialmedia a {
@@ -241,7 +226,33 @@ footer {
     background-color: navy;
 }
 
-.socials img {
+.socialmedia img {
     width: 30px;
     margin: 5px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    /* FIXED contrast */
+}
+
+/* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
