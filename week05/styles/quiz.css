@@ -12,6 +12,11 @@ main {
     color: #fff;
 }
 
+/* Header */
+header {
+    text-align: center margin: 20px 0;
+}
+
 h1 {
     margin: .5rem;
 }
@@ -56,4 +61,10 @@ code {
 
 .quiz-item {
     border: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
 }
