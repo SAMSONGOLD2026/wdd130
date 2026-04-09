@@ -43,7 +43,6 @@ header {
     background-color: var(--secondary-color);
     padding: 10px;
     color: white;
-    /*FIXED contrast */
 }
 
 header img {
@@ -70,7 +69,7 @@ header img {
 
 .hero img {
     width: 100%;
-    display: block;
+
 }
 
 .hero h1 {
@@ -101,7 +100,7 @@ header img {
     margin-left: 10px;
 }
 
-?*HOME PAGE */ .newsletter {
+*HOME PAGE */ .newsletter {
     text-align: center;
     margin: 20px;
 }
